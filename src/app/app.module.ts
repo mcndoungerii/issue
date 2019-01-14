@@ -9,6 +9,8 @@ import { ListComponent } from './components/list/list.component';
 import { CreateComponent } from './components/create/create.component';
 import { EditComponent } from './components/edit/edit.component';
 
+import { IssueService } from './issue.service';
+
 const routes: Routes = [
   { path: 'create', component: CreateComponent },
   { path: 'edit', component: EditComponent},
@@ -29,7 +31,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     MatToolbarModule
   ],
-  providers: [],
+  providers: [IssueService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
