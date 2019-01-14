@@ -43,3 +43,5 @@ export class IssueService {
     return this.http.get(`${thi.uri}/issues/delete/${id}`);
   }
 }
+
+// MEAN STACK APP PART 3
