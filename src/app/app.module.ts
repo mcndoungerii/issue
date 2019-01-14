@@ -12,6 +12,7 @@ import { MatToolbarModule,
          MatTableModule,
          MatDividerModule,
          MatSnackBarModule } from '@angular/material';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -49,7 +50,8 @@ const routes: Routes = [
     MatCardModule,
     MatTableModule,
     MatDividerModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    ReactiveFormsModule
   ],
   providers: [IssueService],
   bootstrap: [AppComponent]
